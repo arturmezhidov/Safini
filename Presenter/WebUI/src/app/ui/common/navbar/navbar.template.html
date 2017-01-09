@@ -1,0 +1,26 @@
+﻿<header class="header">
+    
+    <div class="text-center hidden-xs head-logo-wrapper">
+        <img [routerLink]="['']" src="/src/assets/img/SafiniWithIcon.png"/>
+    </div>
+    
+    <div class="text-center main-menu">
+        
+        <div class="search-wrapper">
+            <img [routerLink]="['']" src="/src/assets/img/search-icon.png" />
+        </div>
+        
+        <div class="login-wrapper">
+            <span>Войти</span>
+        </div>
+
+        <div class="menu">
+            <a class="link" [routerLink]="['home']" [routerLinkActive]="['active']">Главная</a>
+            <a class="link" [routerLink]="['shop']" [routerLinkActive]="['active']">Магазин</a>
+            <a class="link" [routerLink]="['blog']" [routerLinkActive]="['active']">Блог</a>
+            <a class="link" [routerLink]="['about']" [routerLinkActive]="['active']">О нас</a>
+        </div>
+
+    </div>
+
+</header>

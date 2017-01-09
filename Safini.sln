@@ -3,8 +3,89 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8AC9C969-2E0A-4A1C-B1F6-FCED99B761DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{14A2F227-1604-4714-87AC-E34441240ED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{E345309A-1CA1-4E2A-B16B-606B925360E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{C21BF216-A6A2-49D4-BD6D-571AE7A9695A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenter", "Presenter", "{27238BD9-7809-4FC0-A122-2CB7C4FA1802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.Common.Models", "Safini.Common.Models\Safini.Common.Models.csproj", "{883ADA44-A127-4911-8369-159BA9256C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.DataAccess.DataContracts", "Safini.DataAccess.DataContracts\Safini.DataAccess.DataContracts.csproj", "{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.DataAccess.SqlDataAccess", "Safini.DataAccess.SqlDataAccess\Safini.DataAccess.SqlDataAccess.csproj", "{4CDE9315-8232-4C09-AC2B-2038A9BC658F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.BusinessLogic.BusinessContracts", "Safini.BusinessLogic.BusinessContracts\Safini.BusinessLogic.BusinessContracts.csproj", "{6E890CA7-E5B1-4F1F-9758-67136413DC5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.BusinessLogic.BusinessServices", "Safini.BusinessLogic.BusinessServices\Safini.BusinessLogic.BusinessServices.csproj", "{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.WebServices.AuthService", "Safini.WebServices.AuthService\Safini.WebServices.AuthService.csproj", "{4305ADE9-C50F-499E-8A41-0F0C90168B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.WebServices.WebApiServices", "Safini.WebServices.WebApiServices\Safini.WebServices.WebApiServices.csproj", "{DA7B5529-75D5-40D3-AA4A-6125E4928B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.Presenter.WebUI", "Safini.Presenter.WebUI\Safini.Presenter.WebUI.csproj", "{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safini.DataAccess.DefaultData", "Safini.DataAccess.DefaultData\Safini.DataAccess.DefaultData.csproj", "{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{883ADA44-A127-4911-8369-159BA9256C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883ADA44-A127-4911-8369-159BA9256C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883ADA44-A127-4911-8369-159BA9256C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883ADA44-A127-4911-8369-159BA9256C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDE9315-8232-4C09-AC2B-2038A9BC658F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDE9315-8232-4C09-AC2B-2038A9BC658F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDE9315-8232-4C09-AC2B-2038A9BC658F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDE9315-8232-4C09-AC2B-2038A9BC658F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E890CA7-E5B1-4F1F-9758-67136413DC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E890CA7-E5B1-4F1F-9758-67136413DC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E890CA7-E5B1-4F1F-9758-67136413DC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E890CA7-E5B1-4F1F-9758-67136413DC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4305ADE9-C50F-499E-8A41-0F0C90168B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4305ADE9-C50F-499E-8A41-0F0C90168B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4305ADE9-C50F-499E-8A41-0F0C90168B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4305ADE9-C50F-499E-8A41-0F0C90168B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7B5529-75D5-40D3-AA4A-6125E4928B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7B5529-75D5-40D3-AA4A-6125E4928B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7B5529-75D5-40D3-AA4A-6125E4928B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7B5529-75D5-40D3-AA4A-6125E4928B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{883ADA44-A127-4911-8369-159BA9256C72} = {8AC9C969-2E0A-4A1C-B1F6-FCED99B761DA}
+		{8BF8502B-78F8-42EE-A0B9-7E5D3F6DE54E} = {14A2F227-1604-4714-87AC-E34441240ED4}
+		{4CDE9315-8232-4C09-AC2B-2038A9BC658F} = {14A2F227-1604-4714-87AC-E34441240ED4}
+		{6E890CA7-E5B1-4F1F-9758-67136413DC5E} = {C21BF216-A6A2-49D4-BD6D-571AE7A9695A}
+		{ADB4D445-FFE4-4E8E-9B07-EB8AD90DC192} = {C21BF216-A6A2-49D4-BD6D-571AE7A9695A}
+		{4305ADE9-C50F-499E-8A41-0F0C90168B1D} = {E345309A-1CA1-4E2A-B16B-606B925360E0}
+		{DA7B5529-75D5-40D3-AA4A-6125E4928B62} = {E345309A-1CA1-4E2A-B16B-606B925360E0}
+		{C492BB27-60E2-42C7-BA9A-FD25A7FFABF0} = {27238BD9-7809-4FC0-A122-2CB7C4FA1802}
+		{49F3AA63-B6F3-429B-A9C5-3AD02D977AAF} = {14A2F227-1604-4714-87AC-E34441240ED4}
 	EndGlobalSection
 EndGlobal

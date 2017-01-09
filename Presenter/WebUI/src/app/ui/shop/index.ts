@@ -1,0 +1,1 @@
+﻿export { Shop } from './shop-container';

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "",
+    "rootDir": ".",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
+    //"noImplicitAny": false,
+    //"noEmitOnError": false
+  },
+  "exclude": [
+    "typings/index.d.ts",
+    "node_modules"
+  ],
+  "compileOnSave": true,
+  "buildOnSave": true,
+  "atom": { "rewriteTsconfig": false }
+}

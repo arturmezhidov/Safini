@@ -1,0 +1,5 @@
+﻿.loader-container {
+    position: absolute;
+    top: calc(50% - 120px);
+    left: calc(50% - 150px);
+}

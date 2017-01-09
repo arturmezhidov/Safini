@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D6F9939-ADC3-4553-9F5C-3217559B3D79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Safini.Presenter.WebUI</RootNamespace>
+    <AssemblyName>Safini.Presenter.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="src\app\app.html" />
+    <Content Include="src\app\ui\common\navbar\navbar-item.template.html" />
+    <Content Include="src\app\ui\common\navbar\navbar.template.html" />
+    <Content Include="src\assets\img\SafiniLowercase.png" />
+    <Content Include="src\assets\img\SafiniUppercase.png" />
+    <Content Include="src\assets\img\SafiniWithIcon.png" />
+    <Content Include="src\assets\img\search-icon.png" />
+    <Content Include="src\assets\img\Spin-a.png" />
+    <Content Include="src\assets\img\Spin-f.png" />
+    <Content Include="src\assets\img\Spin-i.png" />
+    <Content Include="src\assets\img\Spin-n.png" />
+    <Content Include="src\assets\img\Spin-S.png" />
+    <Content Include="src\assets\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="src\assets\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="src\assets\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="src\assets\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="src\assets\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="src\assets\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="src\assets\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="src\assets\lib\jquery\jquery-3.1.0.js" />
+    <Content Include="src\assets\lib\jquery\jquery-3.1.0.min.js" />
+    <Content Include="src\global.css" />
+    <Content Include="src\index.html" />
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
+    <Content Include="tslint.json" />
+    <Content Include="webpack.config.js" />
+    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="typings\globals\jasmine\typings.json" />
+    <Content Include="typings\globals\lodash\typings.json" />
+    <Content Include="typings\globals\node\typings.json" />
+    <Content Include="src\assets\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="src\assets\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="src\assets\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="src\assets\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="src\assets\sass\bootstrap\_alerts.scss" />
+    <Content Include="src\assets\sass\bootstrap\_badges.scss" />
+    <Content Include="src\assets\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="src\assets\sass\bootstrap\_button-groups.scss" />
+    <Content Include="src\assets\sass\bootstrap\_buttons.scss" />
+    <Content Include="src\assets\sass\bootstrap\_carousel.scss" />
+    <Content Include="src\assets\sass\bootstrap\_close.scss" />
+    <Content Include="src\assets\sass\bootstrap\_code.scss" />
+    <Content Include="src\assets\sass\bootstrap\_component-animations.scss" />
+    <Content Include="src\assets\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="src\assets\sass\bootstrap\_forms.scss" />
+    <Content Include="src\assets\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="src\assets\sass\bootstrap\_grid.scss" />
+    <Content Include="src\assets\sass\bootstrap\_input-groups.scss" />
+    <Content Include="src\assets\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="src\assets\sass\bootstrap\_labels.scss" />
+    <Content Include="src\assets\sass\bootstrap\_list-group.scss" />
+    <Content Include="src\assets\sass\bootstrap\_media.scss" />
+    <Content Include="src\assets\sass\bootstrap\_mixins.scss" />
+    <Content Include="src\assets\sass\bootstrap\_modals.scss" />
+    <Content Include="src\assets\sass\bootstrap\_navbar.scss" />
+    <Content Include="src\assets\sass\bootstrap\_navs.scss" />
+    <Content Include="src\assets\sass\bootstrap\_normalize.scss" />
+    <Content Include="src\assets\sass\bootstrap\_pager.scss" />
+    <Content Include="src\assets\sass\bootstrap\_pagination.scss" />
+    <Content Include="src\assets\sass\bootstrap\_panels.scss" />
+    <Content Include="src\assets\sass\bootstrap\_popovers.scss" />
+    <Content Include="src\assets\sass\bootstrap\_print.scss" />
+    <Content Include="src\assets\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="src\assets\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="src\assets\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="src\assets\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="src\assets\sass\bootstrap\_tables.scss" />
+    <Content Include="src\assets\sass\bootstrap\_theme.scss" />
+    <Content Include="src\assets\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="src\assets\sass\bootstrap\_tooltip.scss" />
+    <Content Include="src\assets\sass\bootstrap\_type.scss" />
+    <Content Include="src\assets\sass\bootstrap\_utilities.scss" />
+    <Content Include="src\assets\sass\bootstrap\_variables.scss" />
+    <Content Include="src\assets\sass\bootstrap\_wells.scss" />
+    <Content Include="src\assets\sass\_bootstrap-compass.scss" />
+    <Content Include="src\assets\sass\_bootstrap-mincer.scss" />
+    <Content Include="src\assets\sass\_bootstrap-sprockets.scss" />
+    <Content Include="src\assets\sass\_bootstrap.scss" />
+    <Content Include="src\assets\sass\Site.scss" />
+    <Content Include="src\assets\sass\safini\navbar.scss" />
+    <Content Include="src\assets\sass\_safini.scss" />
+    <Content Include="src\assets\sass\safini\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\common\entities\BaseEntity.ts" />
+    <TypeScriptCompile Include="src\app\common\entities\index.ts" />
+    <TypeScriptCompile Include="src\app\common\entities\Slide.ts" />
+    <TypeScriptCompile Include="src\app\ui\about\about-us\about-us.component.ts" />
+    <TypeScriptCompile Include="src\app\ui\about\about-container.ts" />
+    <TypeScriptCompile Include="src\app\ui\about\index.ts" />
+    <TypeScriptCompile Include="src\app\app.ts" />
+    <TypeScriptCompile Include="src\app\ui\blog\blog-container.ts" />
+    <TypeScriptCompile Include="src\app\ui\blog\index.ts" />
+    <TypeScriptCompile Include="src\app\ui\common\navbar\navbar-item.component.ts" />
+    <TypeScriptCompile Include="src\app\ui\common\navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="src\app\containers\about.ts" />
+    <TypeScriptCompile Include="src\app\containers\auth.ts" />
+    <TypeScriptCompile Include="src\app\containers\index.ts" />
+    <TypeScriptCompile Include="src\app\containers\main.ts" />
+    <TypeScriptCompile Include="src\app\containers\notes.ts" />
+    <TypeScriptCompile Include="src\app\ui\home\home-container.ts" />
+    <TypeScriptCompile Include="src\app\ui\home\index.ts" />
+    <TypeScriptCompile Include="src\app\index.ts" />
+    <TypeScriptCompile Include="src\app\routes.ts" />
+    <TypeScriptCompile Include="src\app\services\api.ts" />
+    <TypeScriptCompile Include="src\app\services\auth.ts" />
+    <TypeScriptCompile Include="src\app\services\index.ts" />
+    <TypeScriptCompile Include="src\app\services\notes.ts" />
+    <TypeScriptCompile Include="src\app\services\store-helper.ts" />
+    <TypeScriptCompile Include="src\app\ui\shop\index.ts" />
+    <TypeScriptCompile Include="src\app\ui\shop\shop-container.ts" />
+    <TypeScriptCompile Include="src\app\store.ts" />
+    <TypeScriptCompile Include="src\app\ui\app-bar.ts" />
+    <TypeScriptCompile Include="src\app\ui\color-picker.ts" />
+    <TypeScriptCompile Include="src\app\ui\common\index.ts" />
+    <TypeScriptCompile Include="src\app\ui\index.ts" />
+    <TypeScriptCompile Include="src\app\ui\note-card.ts" />
+    <TypeScriptCompile Include="src\app\ui\note-creator.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\vendor.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\lodash\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\business-logic\" />
+    <Folder Include="src\app\data-access\" />
+    <Folder Include="src\app\user-interface\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6101</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5463/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

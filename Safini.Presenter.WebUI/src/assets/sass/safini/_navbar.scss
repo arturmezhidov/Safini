@@ -1,0 +1,67 @@
+﻿@import '_variables';
+
+nav, .nav {
+    display: block;
+
+    .navbar-inner {
+        display: table;
+        width: 100%;
+        color: #FFF;
+        background-color: #000000;
+        font-family: Cambria;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        .search-wrapper {
+            display: table-cell;
+            width: 100px;
+            text-align: center;
+            background-color: #666b70;
+            cursor: pointer;
+            vertical-align: middle;
+
+            &:hover {
+                background-color: #777c80;
+            }
+
+            img {
+                 
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .menu-wrapper {
+            display: table-cell;
+            text-align: center;
+
+            .link {
+                display: inline-block;
+                padding: 14px 40px;
+                cursor: pointer;
+                color: #FFF;
+                text-decoration: none;
+
+                &.active {
+                    color: $color-primary;
+                }
+
+                &:hover {
+                    color: $color-link-hover-dark;
+                }
+            }
+        }
+
+        .login-wrapper {
+            display: table-cell;
+            width: 100px;
+            text-align: center;
+            background-color: $color-primary-dark;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+﻿@import '_variables';
+
+.header {
+    .head-logo-wrapper {
+        padding: 10px;
+
+        img {
+            height: 50px;
+            cursor: pointer;
+        }
+    }
+
+    .main-menu {
+        color: #FFF;
+        background-color: #000000;
+        font-family: Cambria;
+        font-size: 14px;
+        text-transform: uppercase;
+        .search-wrapper {
+            float: left;
+            padding: 12px 40px; 
+            background-color: #666b70;
+            cursor: pointer;
+            &:hover {
+                background-color: #777c80;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .menu {
+            .link {
+                display: inline-block;
+                padding: 13px 40px;
+                cursor: pointer;
+                color: #FFF;
+                text-decoration: none;
+                &.active {
+                    color: $color-primary;
+                }
+                &:hover {
+                    color: $color-link-hover-dark;
+                }
+            }
+        }
+        .login-wrapper {
+            float: right;
+            padding: 13px 35px; 
+            background-color: $color-primary-dark;
+            cursor: pointer;
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+}

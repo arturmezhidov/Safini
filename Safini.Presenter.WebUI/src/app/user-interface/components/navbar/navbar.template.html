@@ -1,0 +1,22 @@
+﻿<nav class="nav navbar">
+
+    <div class="navbar-inner">
+
+        <div class="search-wrapper">
+            <img [routerLink]="['']" src="/src/assets/img/search-icon.png" />
+        </div>
+
+        <div class="menu-wrapper">
+            <a class="link" [routerLink]="['home']" [routerLinkActive]="['active']">Главная</a>
+            <a class="link" [routerLink]="['shop']" [routerLinkActive]="['active']">Магазин</a>
+            <a class="link" [routerLink]="['blog']" [routerLinkActive]="['active']">Блог</a>
+            <a class="link" [routerLink]="['about']" [routerLinkActive]="['active']">О нас</a>
+        </div>
+        
+        <div class="login-wrapper">
+            <span>Войти</span>
+        </div>
+
+    </div>
+
+</nav>

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "app-header.css",
+  "sources": ["_app-header.scss"],
+  "names": [],
+  "mappings": "AAAA,OAAQ,QACJ,QAAS,MACT,WAAY,QAAhB,OAAO,mBAAoB,QAAQ,mBAG3B,QAAS,MAAjB,OAAO,mBAAmB,IAAK,QAAQ,mBAAmB,IAG9C,OAAQ,KACR,OAAQ"
+}
